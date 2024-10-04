@@ -1,0 +1,196 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(249, 249, 211); /* achtergrond */
+    color: rgb(240, 217, 1); /* standaard letterkleur */
+}
+/* het logo en de linkjes naar extra pagina`s */
+header {
+    background-color: rgb(245, 230, 99); /* vlak bovenaan site */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.3em;
+    padding-bottom: 1em;
+    padding-inline: 1.5em;
+}
+header img {
+    width: 8.7em;
+    height: 7.2em;
+    background-color: rgb(245, 230, 99);
+    cursor: pointer; /* dat je pijltje een handje word */
+}
+/* alles hieronder zijn de buttons, home-afleveringen etc */
+a {
+    display: inline-block;
+    font-size: 1.2em;
+    text-transform: uppercase; /* dat buttons in CAPS komt */
+    text-decoration: none; /* dat er geen streepje onder de links staan*/
+    transition: all 0.65s ease 0.02s;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    display: flex;
+    list-style-type: none;
+    color: black;
+    margin: 1.4em;
+    letter-spacing: 0.1em;
+}
+a:visited {
+    color: beige;
+    background-color: rgb(245, 230, 99);
+}
+a:hover {
+    color: rgb(249, 249, 211);
+    background-color: beige;
+    transform: scale(1.5);
+}
+/* tot hier */
+/* Dit is dat het logo beweegt */
+header img {
+    animation-name: logo;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: unset;
+}
+@keyframes logo {
+    from { 
+        transform: translateX(-100%); 
+    }
+    to { 
+        transform: translateX(0); 
+    }
+    50% { 
+        transform: rotate(360deg); 
+    }
+    75% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+/* Kopteksten */
+h1 {
+    color: rgb(229, 212, 20);
+    text-align: center;
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    margin-bottom: 1em;
+    padding: 0.6em;
+    border: 0.1em solid black;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 238);
+    font-weight: 800;
+}
+.welkomallemaal {
+    text-align: center;
+    font-size: 2em;
+}
+.slogan {
+    background-color: rgba(229, 212, 20, 0.423);
+    color: black;
+    padding: 0.5em;
+    margin: 25em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 8em;
+}
+/* de contact gegevens onderaan website */
+footer  {
+    margin-top: 18em;
+    padding: 1em;
+    background-color: rgb(250, 250, 238);
+    text-align: center;
+    color: black;
+}
+/* alles hieronder zijn de buttons, home aflevering etc */
+a {
+    color: black;
+    background-color: rgb(253, 253, 203);
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.65s ease 0.05s;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: rgb(240, 217, 1);
+    transform: scale(1.4);
+    cursor: pointer;
+}
+/* tot hier */
+/* afleveringen pagina */
+.afleveringen {
+    margin: 2em;
+    width: 100%;
+}
+.afleveringentekst h2 {
+    color: rgb(240, 217, 1);
+    background-color: white;
+    border: 0.1em solid rgb(240, 217, 1) ;
+    padding: 0.3em;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-right: 2.7em;
+}
+.afleveringentekst p {
+    color: black;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 15em;
+    margin-bottom: 4em;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+/* einde aflevering pagina */
+/* alles hieronder is de overons pagina, 
+hoe de tekst naast de afbeelding staat */
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.naastafbeelding {
+    margin-top: 4em;
+    margin-bottom: 14em;
+    margin-left: 5em;
+    width: 90%;
+}
+.persoonfoto {
+    width: 10.5em;
+    height: 19em;
+    float: inline-start;
+    border: 0.3em solid rgb(240, 217, 1);
+    border-radius: 1em;
+    margin-right: 1em;
+}
+.text-box h2 {
+    font-size: 2.5em;
+    color: rgb(240, 217, 1);
+}
+.text-box p {
+    color: black;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+/* tot hier */
+/* dit is op de contact pagina */
+.contact h2 {
+    text-align: center;
+    font-size: 1.9em;
+}
+.contact p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 1.2em;
+}
